@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    /*font-family: Arial, sans-serif;*/
+    font-size: 16px;
+    color: #444444;
+    /* отступ, чтобы компенсировать высоту навбара */
+    margin-top: 60px;
+    background: #e1e7ed;
+    text-align: center;
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 900px;
+}
+
+.navbar {
+    display: block;
+    background: #02918c;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    font-size: 0;
+    box-sizing: border-box;
+    padding: 7px 30px;
+}
+
+.menu {
+    font-size: 14px;
+    line-height: 1;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    color: #fffee8;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    padding: 5px 15px;
+}
+
+.menu a:hover {
+    color: #ffc122;
+    text-decoration: underline;
+}
+
+.card-content{
+	text-align: center;
+	padding: 0px;
+	margin-top: 0;
+}
+.card-title h3 {
+    margin-left: 10%;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.card-title p{
+    font-weight: bold;
+    font-size: 15px;
+}
+.card-title{
+	font-size: 18px;
+	font-weight: normal;
+	color: #33363b;
+}
+.card-title a{
+    float: right;
+}
+
+.card{
+	width: 500px;
+	background: white;
+	display: inline-block;
+    box-sizing: border-box;
+	margin: 10px 15px;
+    border: #7e8287 solid;
+    overflow-x: hidden;
+}
+.card p{
+	font-size: 14px;
+	color: #868d9b;
+	line-height: 24px;
+    padding: 10px;
+}
+
+.card-button{
+	float: right;
+    color: #02918c;
+    margin-right: 10px;
+}
+
+.card-button:hover {
+    color: black;
+}
+
+.button {
+    width:  298px;
+	height: 50px;
+
+	color: white;
+	font-size: 14px;
+	text-decoration: none;
+	text-transform: uppercase;
+	display: inline-block;
+	border-radius: 5px;
+    border: #7e8287 solid 1px;
+	line-height: 50px;
+}
+.accept {
+    background: crimson;
+}
+.cancel {
+    background: #7e8287;
+    color: white;
+}
+.button:hover {
+    background: brown;
+    color: white;
+}
+
+.cancel:hover {
+    background: #33363b;
+}
+.pre {
+    white-space: pre;
+}
+
+.error {
+    font-weight: bold;
+    color: red;
+    margin-top: 2px;
+}
