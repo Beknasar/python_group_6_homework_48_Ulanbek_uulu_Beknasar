@@ -98,7 +98,7 @@ body {
 	font-size: 14px;
 	text-decoration: none;
 	text-transform: uppercase;
-	/*display: inline-block;*/
+	display: inline-block;
     justify-content: space-around;
 	border-radius: 5px;
     border: #7e8287 solid 1px;
