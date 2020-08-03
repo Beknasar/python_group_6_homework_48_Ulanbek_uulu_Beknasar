@@ -1,6 +1,8 @@
 from django import forms
 from .models import CATEGORY_CHOICES, DEFAULT_CATEGORY
 
+class SearchForm(forms.Form):
+    query = forms.CharField()
 
 class ProductForm(forms.Form):
     name = forms.CharField(max_length=100, required=True, label='Название')

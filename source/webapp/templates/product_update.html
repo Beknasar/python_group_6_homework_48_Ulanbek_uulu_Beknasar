@@ -7,10 +7,9 @@
 {% endblock %}
 
 {% block content %}
+    <div class="content">
     <h1>Update Product</h1>
-{#        {% for field in form %}#}
-{#            {% include 'partial/form_field.html' %}#}
-{#        {% endfor %}#}
         {% url 'product_update' pk=product.pk as action_url %}
         {% include 'partial/form.html' with action_url=action_url form_method='post' %}
+    </div>
 {% endblock %}

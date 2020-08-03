@@ -8,9 +8,9 @@
 {% endblock %}
 
 {% block content %}
-    <div class="product_view">
+    <div class="product_view content">
         <h1>{{ product.name }}</h1>
-        <p>Категория: {{ product.get_category_display }}</p>
+        <p>Категория: <a href="{% url 'product_category' product.category %}">{{ product.get_category_display }}</a></p>
         <p>Осталось: {{ product.amount }}шт. по цене {{ product.price }} за ед.</p>
         <label>Описание:</label>
         <p class="pre">{{ product.description }}</p>

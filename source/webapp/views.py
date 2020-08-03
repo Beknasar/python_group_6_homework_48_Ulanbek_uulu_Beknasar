@@ -1,15 +1,19 @@
 from django.shortcuts import render, redirect, get_object_or_404
-from webapp.models import Product
-
+from webapp.models import Product, CATEGORY_CHOICES
 
 from django.http import HttpResponseNotAllowed
 from .forms import ProductForm
 
+
 def index_view(request):
     data = Product.objects.all()
-    return render(request, 'index.html', context={'products': data})
+    return render(request, 'index.html', context={'products': data,
+                                                  'categories': CATEGORY_CHOICES})
 
-
+def product_category(request, category):
+    data = Product.objects.filter(category=category).order_by('name')
+    print(data)
+    return render(request, 'product_categories.html', {'products': data})
 
 def product_view(request, pk):
     product = get_object_or_404(Product, pk=pk)
